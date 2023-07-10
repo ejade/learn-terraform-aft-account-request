@@ -1,12 +1,12 @@
-module "sandbox" {
+module "claybox" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "elias.jaderlund+lz-test_sandbox@gmail.com"
-    AccountName               = "sandbox-aft"
+    AccountEmail              = "elias.jaderlund+lz-test_claybox@gmail.com"
+    AccountName               = "claybox-aft"
     ManagedOrganizationalUnit = "ATF"
-    SSOUserEmail              = "elias.jaderlund+lz-test_sandbox@gmail.com"
-    SSOUserFirstName          = "Sandbox"
+    SSOUserEmail              = "elias.jaderlund+lz-test_claybox@gmail.com"
+    SSOUserFirstName          = "Claybox"
     SSOUserLastName           = "AFT"
   }
 
@@ -25,5 +25,5 @@ module "sandbox" {
     group = "non-prod"
   }
 
-  account_customizations_name = "sandbox"
+  account_customizations_name = "claybox"
 }
